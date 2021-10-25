@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="fav.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>What is the goal of this test?</h1>
+    <p>
+      The goal of this test is to demonstrate how we can make a favicon icon
+      that changes color depending on the users theme to try not blend into the
+      tab bar.
+      <br />
+      NOTE: the favicon may not update until you refresh the page if you are
+      switching themes.
+      <br>
+      <br>
+      How do I switch themes?</br>
+      On windows this means going into your windows settings, and changing from light to dark. For other os's, you will have to look this up.
+      <br>
+      The favicon should be the same color as the svg below (white when your in dark theme, black when you are in light theme).):
+    </p>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="512"
+      height="512"
+      viewBox="0 0 100 100"
+    >
+      <style>
+        circle {
+          fill: black;
+        }
+        @media (prefers-color-scheme: dark) {
+          circle {
+            fill: white;
+          }
+        }
+      </style>
+      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" />
+    </svg>
+  </body>
+</html>
